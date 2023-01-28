@@ -1,0 +1,29 @@
+﻿@using TheTown
+@using TheTown.ViewModels.Product;
+@{
+    ViewData["Title"] = "Update";
+}
+@model UpdateProductVM
+<div class="container">
+    <div class="card p-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="About"></label>
+                <input asp-for="About" class="form-control">
+                <span asp-validation-for="About" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Icon"></label>
+                <input asp-for="Icon" class="form-control">
+                <span asp-validation-for="Icon" class="text-danger"></span>
+            </div>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
